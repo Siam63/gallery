@@ -31,7 +31,7 @@ function ImageGallery() {
     }
 
     return (
-        <div className="w-full h-screen bg-[#0a192f]">
+        <div>
             <div style={ {padding: '10px'} }>
                 <Masonry columnsCount={3} gutter="10px">
                     {images.map((image, i) => (

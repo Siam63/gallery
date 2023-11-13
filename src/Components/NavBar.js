@@ -19,16 +19,6 @@ function NavBar() {
                 </Container>
             </Navbar>
         </div>
-        
-        // <div>
-        //     <div className="h-[50px] bg-gray-700">
-        //         <div className="flex p-1 justify-end text-align mr-2">
-        //             <button className="transition-all hover:bg-slate-600 border-1 mt-1 p-1 text-gray-200">Home</button>
-        //             <button className="ml-4 transition-all hover:bg-slate-600 border-1 mt-1 p-1 text-gray-200">Gallery</button>
-        //             <button className="ml-4 transition-all hover:bg-slate-600 border-1 mt-1 p-1 text-gray-200">Contact Me</button>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 
