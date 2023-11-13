@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Masonry from "react-responsive-masonry";
 
 const images = [
-    "https://picsum.photos/2000/3000",
-    "https://picsum.photos/3000/2000",
-    "https://picsum.photos/4000/3000",
-    "https://picsum.photos/3000/1500",
-    "https://picsum.photos/1000/2500",
-    "https://picsum.photos/1500/2000"
+    "./assets/bkg_car.jpeg",
+    "./assets/bkg_rlx.jpeg",
+    "./assets/car_bkg.jpeg",
+    "./assets/bkg_car.jpeg",
+    "./assets/bkg_rlx.jpeg",
+    "./assets/car_bkg.jpeg"
 ]
 
 function ImageGallery() {
@@ -16,18 +16,21 @@ function ImageGallery() {
     }
 
     return (
-        <div style={ {padding: '10px'} }>
-            <Masonry columnsCount={3} gutter="10px">
-                {images.map((image, i) => (
-                    <img
-                        key={i}
-                        src={image}
-                        style={{width: "100%", display: "block"}}
-                        onClick={() => viewImage(image, i)}
-                    />
-                ))}
-            </Masonry>
+        <div className="w-full h-screen bg-[#0a192f]">
+            <div style={ {padding: '10px'} }>
+                <Masonry columnsCount={3} gutter="10px">
+                    {images.map((image, i) => (
+                        <img className="hover:scale-125 transition-all"
+                            key={i}
+                            src={image}
+                            style={{width: "100%", display: "block"}}
+                            onClick={() => viewImage(image, i)}
+                        />
+                    ))}
+                </Masonry>
+            </div>
         </div>
+        
     )
 }
 

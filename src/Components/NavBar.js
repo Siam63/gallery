@@ -9,7 +9,7 @@ function NavBar() {
         <div>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="/">S.R.</Navbar.Brand>
+                    <button className='flex justify-center align-top text-gray-300 text-2xl'>S.R.</button>
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/gallery">Gallery</Nav.Link>
